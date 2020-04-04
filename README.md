@@ -1,11 +1,11 @@
 # postfix-converter-calculator
 
-Small program that converts an infix calculation into postfix and computes it
-
----
-
 ## Usage
 
-npm start
+`$npm start`
+
+Valid infix calculations will be converted to postfix and computed
 
 ![Console Usage](/public/images/calculator3000.png)
+
+/!\ The implicit multiplication of parentheses blocks isn't supported /!\
