@@ -41,7 +41,7 @@ const handleOperand = (infix, operations, postfix) => {
 };
 
 const handleNumber = (infix, postfix) => {
-	const number = String.parseInt(infix);
+	const number = parseInt(infix, 10);
 	postfix.push(number);
 	return number.toString().length;
 };
@@ -60,11 +60,11 @@ const infixToPostfix = (input) => {
 	infix += ')';
 
 	while (infix.length) {
-		if (Number.isNaN(infix[0])) {
+		if (isNaN(infix[0])) {
 			handleOperand(infix, operations, postfix);
 			infix = infix.substring(1);
 		} else {
-			curNumberLength = handleNumber(infix, operations, postfix);
+			curNumberLength = handleNumber(infix, postfix);
 			infix = infix.substring(curNumberLength);
 		}
 	}

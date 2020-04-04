@@ -27,11 +27,7 @@ const computePostfix = (postfixArray) => {
 			first = postfixArray[i];
 			second = postfixArray[i + 1];
 			third = postfixArray[i + 2];
-			if (
-				!Number.isNaN(first) &&
-				!Number.isNaN(second) &&
-				Number.isNaN(third)
-			) {
+			if (!isNaN(first) && !isNaN(second) && isNaN(third)) {
 				result = computeSingleOperation(first, second, third);
 				if (!result) return result;
 				postfixArray.splice(i, 3, result);

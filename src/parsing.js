@@ -12,7 +12,7 @@ const parseInput = (input) => {
 	for (let i = 0; i < strippedInput.length; i += 1) {
 		currentChar = strippedInput[i];
 		if (
-			Number.isNaN(currentChar) &&
+			isNaN(currentChar) &&
 			!operands.includes(currentChar) &&
 			!parentheses.includes(currentChar)
 		)
