@@ -73,4 +73,5 @@ const infixToPostfix = (input) => {
 
 module.exports = {
 	infixToPostfix,
+	getOperandPrecedence,
 };
