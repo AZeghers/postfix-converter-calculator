@@ -1,13 +1,14 @@
 {
-	"name": "vscode-setup",
+	"name": "postfix-converter",
 	"version": "1.0.0",
-	"description": "",
-	"main": "something.js",
+	"description": "Infix to Postfix converter and calculator",
+	"main": "./src/index.js",
 	"scripts": {
+		"start": "node ./src/index.js",
 		"test": "mocha"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "azeghers",
 	"license": "ISC",
 	"devDependencies": {
 		"eslint": "^6.8.0",
